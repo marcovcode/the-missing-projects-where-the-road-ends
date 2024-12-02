@@ -3,7 +3,7 @@ right_key = keyboard_check(ord("D"));
 
 speed_x = (right_key - left_key) * movement_speed;
 
-if (place_meeting(x + speed_x, y, obj_collision)) {
+if (place_meeting(x + speed_x, y, obj_collision) || !can_move) {
 	speed_x = 0;
 }
 
