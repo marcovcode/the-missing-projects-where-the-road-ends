@@ -1,6 +1,6 @@
 lines = [
-	{ interlocutor: "", text: "Hello!" },
-	{ interlocutor: "Thomas", text: "Who is this?" },
-	{ interlocutor: "Hidden Bob", text: "It's Hidden Bob!" },
-	{ interlocutor: "Thomas", text: "Woah, that's reassuring!" },
+	{ speaker: "", text: "Hello!" },
+	{ speaker: "Thomas", text: "Who is this?" },
+	{ speaker: "Hidden Bob", text: "It's Hidden Bob!" },
+	{ speaker: "Thomas", text: "Woah, that's reassuring!" },
 ];

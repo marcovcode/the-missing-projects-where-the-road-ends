@@ -3,8 +3,8 @@ interact_key = keyboard_check_pressed(ord("E"));
 if (interact_key || auto_trigger) {
     if (is_talking) {
         if (current_char <= string_length(lines[current_line].text)) {
-            if (lines[current_line].interlocutor != "") {
-                current_text = lines[current_line].interlocutor + ": " + lines[current_line].text;
+            if (lines[current_line].speaker != "") {
+                current_text = lines[current_line].speaker + ": " + lines[current_line].text;
             } else {
                 current_text = lines[current_line].text;
             }
@@ -30,8 +30,8 @@ if (interact_key || auto_trigger) {
 if (is_talking) {
     if (current_char <= string_length(lines[current_line].text)) {
         if (typing_timer <= 0) {
-            if (lines[current_line].interlocutor != "") {
-                current_text = lines[current_line].interlocutor + ": " + string_copy(lines[current_line].text, 1, current_char);
+            if (lines[current_line].speaker != "") {
+                current_text = lines[current_line].speaker + ": " + string_copy(lines[current_line].text, 1, current_char);
             } else {
                 current_text = string_copy(lines[current_line].text, 1, current_char);
             }
