@@ -1,6 +1,6 @@
 interact_key = keyboard_check_pressed(ord("E"));
 
-if (interact_key || auto_trigger) {
+if ((interact_key || auto_trigger) && array_length(lines) > 0) {
     if (is_talking) {
         if (array_length(lines) > 0) {
             if (current_char <= string_length(lines[current_line].text)) {
@@ -21,9 +21,6 @@ if (interact_key || auto_trigger) {
                 obj_player.can_move = true;
                 is_talking = false;
             }
-        } else {
-            // Array is empty, do nothing but stay in is_talking state
-            current_text = "";
         }
     } else if (place_meeting(x, y, obj_player) || auto_trigger) {
         auto_trigger = false;

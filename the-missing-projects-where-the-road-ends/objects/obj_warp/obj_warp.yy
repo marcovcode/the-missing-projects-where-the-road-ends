@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inside_van_init",
+  "%Name":"obj_warp",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inside_van_init",
+  "name":"obj_warp",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_warp",
+    "path":"sprites/spr_warp/spr_warp.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
