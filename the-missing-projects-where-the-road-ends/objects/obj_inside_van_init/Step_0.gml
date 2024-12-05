@@ -10,6 +10,11 @@ if (has_checked_last_package_address) {
 }
 
 // change room
-if (inst_driver_seat_dialogue_trigger.is_talking && has_checked_last_package_address) {
-	room_goto(rm_town);
+if (inst_driver_seat_dialogue_trigger.is_talking && has_checked_last_package_address && !is_transitioning) {
+	is_transitioning = true;
+	
+	transition = instance_create_depth(0, 0, -999, obj_transition);
+	transition.target_room = rm_town;
+	transition.target_x = 100;
+	transition.target_y = 100;
 }
