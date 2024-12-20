@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://dld3we54ggbuc"]
+[gd_scene load_steps=3 format=3 uid="uid://dld3we54ggbuc"]
 
-[ext_resource type="PackedScene" uid="uid://c4ttl2ldi05eq" path="res://scenes/player.tscn" id="1_4l12g"]
+[ext_resource type="Script" path="res://scripts/inside_delivery_van.gd" id="1_0u5vy"]
+[ext_resource type="PackedScene" uid="uid://c4ttl2ldi05eq" path="res://scenes/player.tscn" id="1_1ocrh"]
 
 [node name="Test" type="Node2D"]
+script = ExtResource("1_0u5vy")
 
-[node name="Player" parent="." instance=ExtResource("1_4l12g")]
+[node name="Player" parent="." instance=ExtResource("1_1ocrh")]
 position = Vector2(151, 151)
